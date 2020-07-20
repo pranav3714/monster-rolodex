@@ -7,7 +7,7 @@ import Search from "./components/search";
 
 const fetchUsers = async (stateSetter) => {
   try {
-    const users = await axios.get("http://jsonplaceholder.typicode.com/users");
+    const users = await axios.get("https://jsonplaceholder.typicode.com/users");
     stateSetter(users.data);
   } catch (e) {
     console.log(e);
